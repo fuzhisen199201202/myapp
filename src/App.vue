@@ -6,6 +6,7 @@
 </template>
 
 <script>
+  let a=1;
 export default {
   name: 'App'
 }
