@@ -1,25 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
 
 <script>
-  let a=1;
-  let b=2
+  import axios from 'axios'
+  import {getlist,postlist} from './services/appServices.js'
 export default {
-  name: 'App'
+  name: 'App',
+  data:function(){
+    return {
+
+    }
+  },
+  created:function(){
+      this.$router.replace('/login')
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style type="text/css">
+  @import "./style/style.css";
 </style>
