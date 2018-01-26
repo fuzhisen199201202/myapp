@@ -42,6 +42,10 @@
     margin: 0 3.5rem;
     height: 100%;
 }
+.input-content .prompted{
+    text-align: center;
+    color: #f01414;
+}
 .input-tel,.input-pwd{
     padding: 4.2rem 0 1.7rem 0;
     border-bottom: 1px solid #dddddd;
@@ -88,7 +92,7 @@
     background-size: 100% 100%;
 }
 .login-btn{
-    margin-top: 4.9rem;
+    margin-top: 3rem;
     width: 100%;
     height: 5rem;
     text-align: center;
@@ -102,4 +106,9 @@
     border-radius: 10px;
     font-size: 1.8rem;
     border: none;
+}
+.pwd{
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 1.4rem;
 }

@@ -1,8 +1,8 @@
 <template>
-    <div class="input-tel">
+    <div class="input-pwd">
         <span></span>
-        <input type="text" :placeholder="placeholder"
-               v-on:input="inputEvent"
+        <input type="text" placeholder="请输入密码"
+               v-on:input="inputEvent1"
                v-on:blur="blurEvent"
         />
     </div>
@@ -16,13 +16,14 @@
         },
         props:['placeholder'],
         methods:{
-            inputEvent:function(e){
+            inputEvent1:function(e){
                 var value= e.target.value
                 console.log(value)
-                this.$emit('gettel',value)
+                this.$emit('getpwd',value)
             },
             blurEvent:function(e){
                 var value= e.target.value
+                console.log(value)
                 this.$emit('blur',value)
             }
         }
